@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /property_management
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/property_management?useSSL=false&useTimezone=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+  jpa:
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+      ddl-auto: none
+    show-sql: true    # 打印数据库语句
+
+  flyway:
+    locations: classpath:db/migration
+    table: flyway_schema_history
+    out-of-order: true
+    baseline-on-migrate: true
+
+#  jackson:
+#    default-property-inclusion: non_null  # 如果为空，不返回
+
+
+# ===== 自定义swagger配置 ===== #
+swagger:
+  enable: true
+  application-name: ${spring.application.name}
+  application-version: 1.0
+  application-description: security check platform
+  try-host: http://localhost:${server.port}
