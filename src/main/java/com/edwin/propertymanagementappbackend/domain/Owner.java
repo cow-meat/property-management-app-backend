@@ -1,5 +1,6 @@
 package com.edwin.propertymanagementappbackend.domain;
 
+import com.edwin.propertymanagementappbackend.enums.Gender;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -22,7 +23,7 @@ public class Owner extends AuditModel {
     private String pwd;
 
     // 性别
-    private String gender;
+    private Gender gender;
 
     // 姓名
     private String name;
