@@ -2,7 +2,10 @@ package com.edwin.propertymanagementappbackend.exception.core;
 
 public enum NotFoundError {
 
-    NOT_FOUND_SERVICE_TYPE("service type not found");
+    NOT_FOUND_SERVICE_TYPE("service type not found"),
+    NOT_FOUND_ANNOUNCEMENT("Announcement not found"),
+
+    ;
 
     private final String message;
 
