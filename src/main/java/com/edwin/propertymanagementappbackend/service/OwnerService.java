@@ -1,11 +1,9 @@
 package com.edwin.propertymanagementappbackend.service;
 
-import antlr.StringUtils;
 import com.edwin.propertymanagementappbackend.controller.request.OwnerCreateRequest;
 import com.edwin.propertymanagementappbackend.controller.request.OwnerLoginRequest;
 import com.edwin.propertymanagementappbackend.controller.request.OwnerUpdateRequest;
 import com.edwin.propertymanagementappbackend.domain.Owner;
-import com.edwin.propertymanagementappbackend.exception.CommonException;
 import com.edwin.propertymanagementappbackend.exception.core.DuplicatedException;
 import com.edwin.propertymanagementappbackend.exception.core.NotFoundException;
 import com.edwin.propertymanagementappbackend.repository.OwnerRepository;
@@ -23,7 +21,6 @@ import static com.edwin.propertymanagementappbackend.exception.core.NotFoundErro
 public class OwnerService {
 
     private final OwnerRepository ownerRepository;
-
 
     public List<Owner> getAll() {
         return ownerRepository.findAll();

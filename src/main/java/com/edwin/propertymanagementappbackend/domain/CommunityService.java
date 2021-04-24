@@ -1,5 +1,6 @@
 package com.edwin.propertymanagementappbackend.domain;
 
+import com.edwin.propertymanagementappbackend.enums.ServiceStatus;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -20,5 +21,5 @@ public class CommunityService extends AuditModel {
 
     private String context;
 
-    private String status;
+    private ServiceStatus status;
 }

@@ -6,6 +6,7 @@ public enum NotFoundError {
     NOT_FOUND_ANNOUNCEMENT("Announcement not found"),
     NOT_FOUND_OWNER("owner not found"),
     USERNAME_OR_PASSWORD_ERROR("username or password error"),
+    NOT_FOUND_COMMUNITY_SERVICE("Community service not found"),
 
     ;
 
