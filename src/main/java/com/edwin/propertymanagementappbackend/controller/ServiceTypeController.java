@@ -47,7 +47,7 @@ public class ServiceTypeController {
         return service.update(request);
     }
 
-    @GetMapping("/{id}")
+    @DeleteMapping("/{id}")
     @ResponseStatus(OK)
     public void delete(@PathVariable("id") Long id) {
         service.deleteById(id);
