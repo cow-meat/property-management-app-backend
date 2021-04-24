@@ -1,7 +1,7 @@
 package com.edwin.propertymanagementappbackend.exception.core;
 
 public enum DuplicatedError {
-    USER_EXISTED("User existed");
+    SERVICE_TYPE_EXISTED("Service type existed");
 
     private final String message;
 
