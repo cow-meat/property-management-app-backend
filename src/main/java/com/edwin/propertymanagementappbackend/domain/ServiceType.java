@@ -16,5 +16,5 @@ public class ServiceType extends AuditModel {
 
     private String type;
 
-    private String typeName;
+    private String description;
 }

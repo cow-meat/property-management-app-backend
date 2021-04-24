@@ -16,9 +16,9 @@ public class CommunityService extends AuditModel {
 
     private Long ownerId;
 
-    private String type;
+    private Long typeId;
 
     private String context;
 
-    private Long statusId;
+    private String status;
 }

@@ -22,5 +22,5 @@ public abstract class AuditModel implements Serializable {
     private Instant createTime;
 
     @LastModifiedDate
-    private Instant updatedTime;
+    private Instant updateTime;
 }
